@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+nav{
+    background-color: #001100;
+}
+label{
+    color: white;
+}
+.chosen{
+    background-color: aquamarine !important;
+}
+
+.Doc{
+    background-color: #002200;
+    margin: 10px;
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+#inputContainer, #buttonsContainer {
+    margin-top: 10px;
+}
+
+input, button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+input{
+    width: 100px;
+    height: 50px;
+}
+
+button {
+    background-color: #00FF00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.ArrayElement {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+/* CSS cho hiệu ứng fade-out với lấp lánh */
+.fade-out {
+    animation: sparkleOut 0.7s forwards;
+    background-color: red;
+    color: white;
+}
+
+/* CSS cho hiệu ứng fade-in với lấp lánh */
+.fade-in {
+    animation: sparkleIn 0.7s forwards;
+    background-color: red;
+    color: white;
+}
+
+.Icon{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: -20%;
+}
+
+.bgr{
+    background-color: #00AA00;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes sparkleOut {
+    0% { opacity: 1; transform: scale(1); }
+    25% { opacity: 0.5; transform: scale(1.1); }
+    50% { opacity: 1; transform: scale(1.2); }
+    75% { opacity: 0.5; transform: scale(1.1); }
+    100% { opacity: 0; transform: scale(1); }
+}
+
+@keyframes sparkleIn {
+    0% { opacity: 0; transform: scale(1); }
+    25% { opacity: 0.5; transform: scale(1.1); }
+    50% { opacity: 1; transform: scale(1.2); }
+    75% { opacity: 0.5; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+}
