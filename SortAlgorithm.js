@@ -376,6 +376,7 @@ async function mergeWithEffect(arr, left, mid, right, buttons) {
         buttons[idx].classList.add('fade-in');
     }
 
+    
     // Chờ để các phần tử xuất hiện hoàn toàn
     await new Promise(resolve => setTimeout(resolve, 700));
 
